@@ -42,6 +42,8 @@ public class UpsertCarInfoApp {
 		UpdateResponse updateResponse = client.update(updateRequest).get();
 	
 		System.out.println(updateResponse.getVersion()); 
+		
+		client.close();
 	}
 	
 }
